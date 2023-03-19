@@ -6,18 +6,22 @@
         <meta name="viewport" content="width-device-width ,initial-scale=1.0">
         <title>Personal Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ef9506e125.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
+        
         <div id="header">
             
-          
+           
           <div class="container">
-            
-            <nav>
-                <h4 style="color:red;font-size: xx-large;">Afrin</h4>
+            <div class="navbar">
+            <img src="logo2.png" class="logo">
+            <nav style="height: 100px">
+               
                 
                 <ul>
+                   
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -26,23 +30,175 @@
                     
                 </ul>
             </nav>
+        </div>
+            <div class="row">
+               
              <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h2>Hi, I'm <span>Afrin</span>Tuli<br/> from Bangladesh</h2>
+                <h1>Hi, I'm <span>Afrin</span>Tuli<br/> from Bangladesh</h1>
+             </div>
+             <div class="header-image">
+                <img src="back.png" >
              </div>
           </div>
+        </div>
           
         </div>
+        <!-----------about--------->
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                       <img src="images/user.png">
+                       <img src="user.jpg" >
                     </div>
-                    <div class="about-col-2"></div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p style="font-size: large;">Welcome to my portfolio website, where creativity and technology come together to create exceptional digital experiences. 
+                            I'm a talented developer with a passion for design and coding, and my portfolio showcases my best work, 
+                            from beautifully designed websites to complex mobile applications and interactive experiences. 
+                            Let's work together to create unforgettable digital experiences that inspire and engage.
+
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li style="font-size: large;"><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li style="font-size: large;"><span>Web Development</span><br>Web app Development</li>
+                                <li style="font-size: large;"><span>App Development</span><br>Building Andriod/ios apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li style="font-size: large;"><span>2021 - Current</span><br>UI/UX DEsign Training at ET Institute</li>
+                                <li style="font-size: large;"><span>2019 - 2021 </span><br>Team lead at StarApp LLC.</li>
+                                <li style="font-size: large;"><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                
+                                <li style="font-size: large;"><span>2016 - 2017 </span><br>Internship at ekart eCommerce.</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li style="font-size: large;"><span>2016</span><br>UI/UX DEsign Training at ET Institute</li>
+                                <li style="font-size: large;"><span>2016</span><br>MSC from KUET,Khulna,Bangladesh</li>
+                                <li style="font-size: large;"><span>2014</span><br>BSC from KUET,Khulna,Bangladesh</li>
+                                <li style="font-size: large;"><span>2016 - 2017 </span><br>Internship at ekart eCommerce.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
+        <!-------------services------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p style="font-size: large;">Lorem Ipsum is simply dummy text of the printing and 
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                             dummy text ever since the 1500s, when an unknown printer took a galley
+                              of type and scrambled it to make a type specimen book. 
+                                 </p>
+                                   <a href="#">Learn more</a>
+
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-crop"></i>
+                        <h2>UI/UX</h2>
+                        <p style="font-size: large;">Lorem Ipsum is simply dummy text of the printing and 
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                             dummy text ever since the 1500s, when an unknown printer took a galley
+                              of type and scrambled it to make a type specimen book. 
+                                </p>
+                                 <a href="#">Learn more</a>
+
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios" ></i>
+                        <h2>App Design</h2>
+                        <p style="font-size: large;">Lorem Ipsum is simply dummy text of the printing and 
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                             dummy text ever since the 1500s, when an unknown printer took a galley
+                              of type and scrambled it to make a type specimen book. 
+                                 </p>
+                                 <a href="#">Learn more</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------------portfolio------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title" >My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from my play store.
+
+                            </p>
+                            <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3> Music App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from my play store.
+
+                            </p>
+                            <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from my play store.
+
+                            </p>
+                            <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+             var tablinks= document.getElementsByClassName("tab-links");
+             var tabcontents= document.getElementsByClassName("tab-contents");
+             function opentab(tabname)
+             {
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+             }
+
+        </script>
 
     </body>
 </html>
